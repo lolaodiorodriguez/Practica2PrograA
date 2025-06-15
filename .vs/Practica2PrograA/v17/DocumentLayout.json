@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\fabio\\Escritorio\\Fidelitas\\Programacion Avanzada C##\\Practica 2\\Practica2PrograA\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{89F8D8D5-133D-429F-81FB-E7273B24E187}|Practica2PrograA\\Practica2PrograA.csproj|c:\\users\\fabio\\escritorio\\fidelitas\\programacion avanzada c##\\practica 2\\practica2prograa\\practica2prograa\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89F8D8D5-133D-429F-81FB-E7273B24E187}|Practica2PrograA\\Practica2PrograA.csproj|solutionrelative:practica2prograa\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Car.cs",
+              "DocumentMoniker": "C:\\Users\\fabio\\Escritorio\\Fidelitas\\Programacion Avanzada C##\\Practica 2\\Practica2PrograA\\Practica2PrograA\\Models\\Car.cs",
+              "RelativeDocumentMoniker": "Practica2PrograA\\Models\\Car.cs",
+              "ToolTip": "C:\\Users\\fabio\\Escritorio\\Fidelitas\\Programacion Avanzada C##\\Practica 2\\Practica2PrograA\\Practica2PrograA\\Models\\Car.cs",
+              "RelativeToolTip": "Practica2PrograA\\Models\\Car.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T17:54:55.436Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
