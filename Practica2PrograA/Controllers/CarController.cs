@@ -1,5 +1,5 @@
 ﻿using Newtonsoft.Json;
-using Practica2PrograA.Models;
+using ProgramacionAvanzada.Web.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace Practica2PrograA.Controllers
+namespace ProgramacionAvanzada.Web.Controllers
 {
     public class CarController : Controller
     {

@@ -1,0 +1,56 @@
+﻿@model IEnumerable<ProgramacionAvanzada.Web.Models.Job>
+
+@{
+    ViewBag.Title = "Lista de Trabajos";
+}
+
+<h2>Lista de Trabajos</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Descripción</th>
+            <th>Fecha de creación</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            var idNum = int.Parse(item.Id);
+            string rowClass = "";
+
+            switch (idNum % 2)
+            {
+                case 0:
+                    rowClass = "table-success"; // color verde
+                    break;
+                case 1:
+                    rowClass = "table-warning"; // color amarillo
+                    break;
+            }
+
+            <tr class="@rowClass">
+                <td>@item.Id</td>
+                <td>@item.Name</td>
+                <td>
+                    @item.Description
+                    @if (idNum % 2 != 0)
+                    {
+                        <strong> (ID impar)</strong>
+                    }
+                </td>
+                <td>@item.DateCreated.ToShortDateString()</td>
+                <td>
+                    @Html.ActionLink("Ver detalle", "Detalle", new { id = item.Id })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<p>
+    @Html.ActionLink("Crear nuevo trabajo", "Create")
+</p>

@@ -4,9 +4,11 @@
 
 <main>
     <section class="row" aria-labelledby="aspnetTitle">
-        <h1 id="title">Practica 2</h1>
+        <h1 id="title" style="color:lightseagreen;">Práctica Programada 2</h1>
         <p>
-            @Html.ActionLink("Ver Lista de automoviles", "Index", "Car")
+            @Html.ActionLink("Ver Lista de automoviles", "Index", "Car", null, new { @class = "btn btn-primary" })
+        <p>
+            @Html.ActionLink("Ver lista de trabajos", "Index", "Job", null, new { @class = "btn btn-primary" })
         </p>
     </section>
 </main>

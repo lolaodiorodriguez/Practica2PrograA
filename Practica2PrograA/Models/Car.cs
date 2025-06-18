@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
-namespace Practica2PrograA.Models
+namespace ProgramacionAvanzada.Web.Models
 {
     public class Car
     {
