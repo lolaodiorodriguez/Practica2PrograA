@@ -1,0 +1,51 @@
+﻿@model IEnumerable<ProgramacionAvanzada.Web.Models.Person>
+
+<p>
+    @Html.ActionLink("Crear nueva Persona", "Create", null, new { @class = "btn btn-primary" })
+</p>
+
+<table class="table table-striped table-light">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateCreated)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        string estiloFila = "";
+
+        switch (item.Id % 2)
+        {
+            case 0:
+                estiloFila = "background-color:#e0f7fa; color:#004d40;";
+                break;
+            default:
+                estiloFila = "background-color:#fce4ec; color:#880e4f;";
+                break;
+        }
+
+        <tr style="@estiloFila">
+            <td>@Html.DisplayFor(modelItem => item.Name)</td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+                @if (item.Id % 2 != 0)
+                {
+                    <text> - ID impar</text>
+                }
+            </td>
+            <td>@Html.DisplayFor(modelItem => item.DateCreated)</td>
+            <td>
+                @Html.ActionLink("Detalles", "Detalle", new { id = item.Id }, new { @class = "btn btn-info" })
+            </td>
+
+        </tr>
+    }
+</table>
